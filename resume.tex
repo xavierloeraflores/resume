@@ -1,0 +1,267 @@
+\documentclass[a4,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{hyperref}
+\usepackage{csquotes}
+\usepackage{tabularx}
+\hypersetup{colorlinks=true,urlcolor=black}
+\usepackage[11pt]{moresize}
+\usepackage{setspace}
+\usepackage{fontspec}
+\usepackage[inline]{enumitem}
+\usepackage{array}
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+\usepackage{anyfontsize}
+
+%%%% Set Margins
+\usepackage[margin=1cm, top=1cm]{geometry}
+
+%%%% Set Fonts
+\setmainfont[
+BoldFont=SourceSansPro-Semibold.otf, %SourceSansPro-Bold.otf
+ItalicFont=SourceSansPro-RegularIt.otf
+]{SourceSansPro-Regular.otf}
+\setsansfont{SourceSansPro-Semibold.otf}
+
+%%%% Set Page
+\pagestyle{fancy}
+\fancyhf{} 
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+%%%% Set URL Style
+\urlstyle{same}
+
+%%%% Set Indentation
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+%%%% Set Secondary Color
+\definecolor{UI_blue}{RGB}{32, 64, 151}
+
+
+%%%% Set Sections formatting
+\titleformat{\section}{
+\color{UI_blue} \scshape \raggedright \large 
+}{}{0em}{}[\vspace{-10pt} \hrulefill \vspace{-6pt}]
+
+%%%% Set Subtext Formatting
+\newcommand{\subtext}[1]{
+#1\par\vspace{-0.2cm}}
+
+% \newcommand{\subtextit}[1]{\vspace{0.15cm}
+% \textit{ #1 \vspace{-0.2cm}} }
+
+%%%% Set Item Spacing
+\setlist[itemize]{align=parleft,left=0pt..1em}
+
+%%%% New Itemize "Zitemize" Formatting - tighter spacing than itemize
+\newenvironment{zitemize}{
+\begin{itemize}\itemsep0pt \parskip0pt \parsep1pt}
+{\end{itemize}\vspace{-0.5cm}}
+
+
+%%%% Define Skills Bold Formatting
+\newcommand{\hskills}[1]{
+\textbf{\bfseries #1} }
+
+%%%% Set Subsection formatting
+\titleformat{\subsection}{\vspace{-0.1cm} 
+\bfseries \fontsize{11pt}{2cm}}{}{0em}{}[\vspace{-0.2cm}]
+
+%%%%%%% --------------------------------------------------------------------------------------
+%%%%%%% --------------------------------------------------------------------------------------
+%%%%%%% --------------------------------------------------------------------------------------
+%%%%%%% --------------------------------------------------------------------------------------
+%%%%%%% --------------------------------------------------------------------------------------
+%%%%%%% --------------------------------------------------------------------------------------
+%%%%%%% --------------------------------------------------------------------------------------
+%%%%%%% --------------------------------------------------------------------------------------
+%%%%%%% --------------------------------------------------------------------------------------
+%%%%%%% --------------------------------------------------------------------------------------
+%%%%%%% --------------------------------------------------------------------------------------
+%%%%%%% --------------------------------------------------------------------------------------
+%%%%%%% --------------------------------------------------------------------------------------
+%%%%%%% --------------------------------------------------------------------------------------
+%%%%%%% --------------------------------------------------------------------------------------
+
+\begin{document}
+
+%%%%%%% --------------------------------------------------------------------------------------
+%%%%%%%  HEADER
+%%%%%%% --------------------------------------------------------------------------------------
+\begin{center}
+    \begin{minipage}[b]{0.29\textwidth}
+            (408)-887-0340 \\
+            \href{mailto:xavier@loeraflores.tech}{xavier@loeraflores.tech} 
+    \end{minipage}% 
+    \begin{minipage}[b]{0.4\textwidth}
+            \centering
+            {\Large Xavier Alejandro Loera Flores} \\ %
+            \vspace{0.1cm}
+            {\color{UI_blue} \Large{Software Engineer}} \\
+    \end{minipage}% 
+    \begin{minipage}[b]{0.29\textwidth}
+            \flushright  %Willing to Relocate
+            {\href{https://github.com/xavierloeraflores}{github.com/xavierloeraflores} } \\
+            {\href{https://www.linkedin.com/in/xavierloeraflores}{linkedin.com/in/xavierloeraflores} } \\
+            \href{https://loeraflores.com}{Portfolio: https://loeraflores.com}
+    \end{minipage}   
+    
+\vspace{-0.15cm} 
+{\color{UI_blue} \hrulefill}
+\end{center}
+\vspace{-0.25cm}
+
+{Dedicated and skilled software engineer with over 2.5 years of hands-on experience in developing robust and scalable applications within the Node.js/Next.js ecosystem. Seeking a challenging and impactful role where I contribute to the success of dynamic and forward-thinking teams.}
+\vspace{-0.3cm}
+
+%%%%%%% --------------------------------------------------------------------------------------
+%%%%%%%  SKILLS
+%%%%%%% --------------------------------------------------------------------------------------
+\section{Skills}
+\hskills{Languages}: {Go/Golang, TypeScript, JavaScript, Java, Python, Swift, SQL (PostgreSQL, MySQL)}  \\
+\hskills{Backend}: {Fiber, Node, Express, Next, Docker, REST, gRPC, JWT }  \\
+\hskills{Frontend}: {Next.js, React, Svelte, SvelteKit, TailwindCSS, HUGO, HTML, CSS} \\
+\hskills{Tools}: {Git, Docker, AWS (EC2, S3), GitHub Actions, Vercel, Netlify, Insomnia, Postman} \\
+\vspace{-0.2cm}
+
+
+
+
+
+
+%%%%%%% --------------------------------------------------------------------------------------
+%%%%%%%  PROJECTS
+%%%%%%% --------------------------------------------------------------------------------------
+% \section{Projects} %% (Or "Research", select as appropriate)
+
+%%% ----- Best way to write items (Credit - FAANGPath.com)
+        % \item Achieved X\% growth for XYZ using A, B, and C skills.
+        % \item Led XYZ which led to X\% of improvement in ABC
+        % \item Developed XYZ that did A, B, and C using X, Y, and Z. 
+
+
+
+%%%%%%% ------------------------------------------------------------------------------- %%%%%%%
+% \subsection*{Amazon Software Engineering Mentor II, {\normalsize \normalfont Fullstack Academy} \hfill} 
+%     \begin{zitemize}
+%         \item Mentored \& facilitated the technical education of over 50 Amazon software engineers per 6 month cohort.
+%         \item Developed several apps \& services using Next.js, Node, \& React to help facilitate the needs of the class as well as one static knowledge base using markdown \& HUGO featuring supplemental technical learning material.
+%         \item Provided guidance, assistance, and reviews for over 100 weekly projects and assignments using technologies and tools such as HTML, CSS, JavaScript, React, Node, Express, PostgreSQL, MongoDB, Netlify, AWS, \& Git.
+%     \end{zitemize}
+
+
+%%%%%%% --------------------------------------------------------------------------------------
+%%%%%%%  WORK EXPERIENCE
+%%%%%%% --------------------------------------------------------------------------------------
+\section{Experience}
+%%% ----- Best way to write items (Credit - ResumePuppy.com)
+        % \item Developed AngularJS microservice to automate parsing of ~300 emails/day for efficient service request categorization using Linux MBox & Perl scripts; reduced manual re-allocation by 87%.
+        % \item Led the development, build and bring-up execution of Lyft’s first functional AV platform from start to finish; established fleet-grade product reliability over 5 months.
+        % \item Enhanced user experience by fine-tuning stored procedures & SQL queries for efficient data retrieval from ~4M records accessed by 5000+ users worldwide.
+        % \item Built a custom menu single handedly using HTML5, CSS3, XML and JSP and improved the performance of existing application by tuning the PL/SQL scripts by 20\% and reduced on-migration time.
+
+%%%%%%% ------------------------------------------------------------------------------- %%%%%%%
+\subsection*{Amazon Software Engineering Mentor II {\normalsize \normalfont} \hfill  Feb 2023 --- Present }
+\subtext{Fullstack Academy \hfill Remote }
+    \begin{zitemize}
+        \item Mentored \& facilitated the technical education of over 50 Amazon software engineers per 6 month cohort.
+        \item Developed several apps \& services using Next.js, Node, \& React to help facilitate the needs of the class as well as one static knowledge base using markdown \& HUGO featuring supplemental technical learning material.
+        \item Provided guidance, assistance, and reviews for over 100 weekly projects and assignments using technologies and tools such as HTML, CSS, JavaScript, React, Node, Express, PostgreSQL, MongoDB, Netlify, AWS, \& Git.
+    \end{zitemize}
+
+%%%%%%% ------------------------------------------------------------------------------- %%%%%%%
+
+\subsection*{Automation Developer {\normalsize \normalfont(Contract) } \hfill  May 2022 --- Dec 2022 }
+\subtext{Begin Software \hfill Remote }  
+    \begin{zitemize}
+        \item APIs \& webhooks to integrate our clients' SAAS services, applications, \& databases in custom data centric automations to improve internal business workflows, customer experience, \& prospect acquisition.
+        \item Developed an automation for a client that saves their CEO 1-2 hours per day \& converts more paying customers by storing \& tracking contact details/sales progress to send call to action emails at different pipeline stages.
+    \end{zitemize}
+
+%%%%%%% ------------------------------------------------------------------------------- %%%%%%%
+
+\subsection*{Software Engineer {\normalsize \normalfont} \hfill  Feb 2022 --- Aug 2022 }
+\subtext{Inkfluencer \hfill Remote }  
+    \begin{zitemize}
+        \item Developed several backend services relating to user public profiles, \& social media integration using Node(TypeScript), Express, PostgreSQL, \& Prisma in accordance with the MVP specifications \& feature set.
+        \item Coordinated with a small team of React developers to develop a web dashboard \& landing page.
+        \item Set up web client hosting for the landing page, DNS/domain registration, \& AWS S3 image storage.
+    \end{zitemize}
+
+%%%%%%% ------------------------------------------------------------------------------- %%%%%%%
+
+\subsection*{React Developer \& Community Manager {\normalsize \normalfont(Contract) } \hfill  Aug 2021 --- Mar 2022 }
+\subtext{MappyCoin \hfill Remote } 
+    \begin{zitemize}
+        \item Developed several pages \& components from MappyCoin's design mockups into a responsive website with React.
+        \item Completed all deliverables one month ahead of schedule with just 1 other co-developer while my duties expanded.
+        \item Promoted \& expanded responsibilities to include management of a community with over 3000 members on Twitter, Telegram \& Discord \& contributions product/business discussion relating to promotions, the community, business collaborations, raising venture capital, coin distribution/tokenomics, and product features.
+    \end{zitemize}
+
+%%%%%%% ------------------------------------------------------------------------------- %%%%%%%
+
+\subsection*{Fullstack Developer {\normalsize \normalfont(Internship) } \hfill  May 2021 --- Aug 2021 }
+\subtext{CodePath \hfill Remote } 
+    \begin{zitemize}
+        \item Co-developed Kurios, a crypto currency dashboard using React, Node, Express, PostgreSQL, \& Material-UI while practicing Scrum through team meetings, daily stand-ups, code reviews, \& sprint planning with engineers.
+        \item Performed 35,000 daily cron-scheduled API calls to retrieve and store real time price data for six currencies while saving a value of \$600/month by cycling free tiered API keys.
+        \item Showcased a ”professional” level of technical discipline \& collaborative communication as measured in an evaluation rubric graded by my supervisor by exceeding intern level expectations and delivering a robust project.
+    \end{zitemize}
+
+%%%%%%% ------------------------------------------------------------------------------- %%%%%%%
+
+
+
+
+
+
+
+%%%%%%% --------------------------------------------------------------------------------------
+%%%%%%%  EDUCATION
+%%%%%%% --------------------------------------------------------------------------------------
+\section{Education}
+\subsection*{Bachelor's of Science in Computer Science, {\normalsize \normalfont Western Governors University} \hfill Dec 2022 --- Jan 2024} 
+\vspace{0.2cm}
+\subsection*{Fullstack Web Development Bootcamp, {\normalsize \normalfont San Jose State University} \hfill May 2021 --- Nov 2021} 
+\vspace{0.2cm}
+\subsection*{Associate's of Science in Computer Information Systems, {\normalsize \normalfont Mission College} \hfill Aug 2017 --- Dec 2022} 
+\vspace{0.2cm}
+{\hfill}
+
+
+
+%%%%%%% --------------------------------------------------------------------------------------
+%%%%%%%  VOLUNTEER EXPERIENCE
+%%%%%%% --------------------------------------------------------------------------------------
+% \section{Volunteer (or LEADERSHIP) Experience}
+
+%%%%%%% ------------------------------------------------------------------------------- %%%%%%%
+% \subsection*{Position, Org \hfill Mon yyyy --- Mon yyyy} 
+%     \begin{zitemize}
+            % \item \textbf{Short Project Title.} {Build a project that does something and had quantified success using A, B, and C.}
+%     \end{zitemize}
+
+
+%%%%%%% --------------------------------------------------------------------------------------
+%%%%%%%  AWARDS & HONORS
+%%%%%%% --------------------------------------------------------------------------------------
+% \section{Awards \& Honors}
+% \begin{tabular}[t]{ p{4em} p{50em}}
+% \hskills{yyyy} & Award 1 (\hskills{\$xxxxxx}); Award 2 (\hskills{\$xxxxxx}); Award 3 (\hskills{\$xxxxxx}); Award 4 (\hskills{\$xxxxxx}); Award 5 (\hskills{\$xxxxxx}) \\ % 
+% \hskills{yyyy} & Award 6 (\hskills{\$xxxxxx}); Award 7 (\hskills{\$xxxxxx}); Award 8 (\hskills{\$xxxxxx}) \\
+% \end{tabular} 
+
+%%%%%%% ---------------------------- END DOC HERE ---------------------------- %%%%%%% 
+\end{document}
