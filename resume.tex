@@ -79,6 +79,14 @@ ItalicFont=SourceSansPro-RegularIt.otf
 \titleformat{\subsection}{\vspace{-0.1cm} 
 \bfseries \fontsize{11pt}{2cm}}{}{0em}{}[\vspace{-0.2cm}]
 
+%%%% Set White Color (FOR EDUCATION SECTION)
+\definecolor{UI_white}{RGB}{255, 255, 255}
+%%%% Set EDU Subtext Formatting (FOR EDUCATION SECTION)
+\newcommand{\edusubtext}[1]{\vspace{-0.5cm}
+{\fontsize{1pt}{0.1pt}{. \hfill \color{UI_white}{|}}} 
+\par \parskip0pt \parsep1pt \itemsep0pt \hspace*{0pt} \vspace{-0.7cm}
+}
+
 %%%%%%% --------------------------------------------------------------------------------------
 %%%%%%% --------------------------------------------------------------------------------------
 %%%%%%% --------------------------------------------------------------------------------------
